@@ -6,7 +6,7 @@
 Team Members:
 - Leevie Martin
 - Robert Chen
-- Dmitriy Petrenko
+- Dmitriy Petrenko (testing github)
 - Trevor Haining
 
 Project Description:
