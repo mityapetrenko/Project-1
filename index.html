@@ -13,28 +13,33 @@
 
 <body>
     <div class="container">
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid text-center">
             <div class="container">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                <h1 class="display-4">Top world music charts</h1>
+                <p class="lead">Enter a city or country to find the current top songs sorted by popularity
                 </p>
             </div>
         </div>
         <div id="buttons-div">
 
         </div>
-        <form>
-            <div class="form-group col-md-4">
-                <label for="name-input">Name</label>
-                <input type="name" class="form-control" id="name-input" aria-describedby="emailHelp"
-                    placeholder="Enter name">
+        <div class="row">
+            <div class col-md-4>
+                <form>
+
+                    <div class="form-group">
+                        <label for="name-input">Name</label>
+                        <input type="name" class="form-control" id="name-input" aria-describedby="emailHelp"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="search-querry">City/Country Name</label>
+                        <input type="text" class="form-control" id="search-querry" placeholder="Enter city/country">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
-            <div class="form-group col-md-4">
-                <label for="search-querry">City/Country Name</label>
-                <input type="text" class="form-control" id="search-querry" placeholder="Enter city/country">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
         <div class="row">
             <table class="table col-md-6">
                 <thead>
@@ -42,27 +47,27 @@
                         <th scope="col">#</th>
                         <th scope="col">Artist</th>
                         <th scope="col">Song Name</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Country</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
@@ -73,7 +78,7 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="text-center">
         Copyright &copy;
         <script type="text/javascript">
             document.write(new Date().getFullYear());
