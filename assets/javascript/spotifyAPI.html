@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/reset.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel='stylesheet' href='assets/css/style.css'> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="spotifyAPI.js"></script>
+    <style>
+    .jumbotron {
+      text-align: center;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col" id="head-div"></div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<!-- The code below can be ditched! -->
+<!-- <script>
+ // Use your own token (this is just an example)
+
+
+ var playlistID = "37i9dQZEVXbJPcfkRz0wJ0"  // This is the selected country's Playlist/Top 50 songs tracks.  // initially "Australia"
+ var token = "BQBDsP8_D1MwBNDBgT5_h5fSLcKgCRqRFM8JvQsD3pa9J522eMLMM8AyA0EM3d1Uy2uaZtliAtTo1i7Nkx46FopZfzPIR7rq5GluoKY0JVTxVjkPiUDCNxlHCTvSVegLcEu3XtepAXPCh_201nTu"
+ let testObj;
+ 
+ 
+ 
+ var queryURL = "https://api.spotify.com/v1/playlists/" + playlistID;
+
+    $.ajax({
+      url: queryURL,
+      headers: {
+        Authorization: 'Bearer ' + token
+      },
+      method: "GET"
+    })
+    .then( function(response) {
+      testObj = response;
+
+      // Console logs for 'response'
+      console.log(testObj);
+      console.log("Playlist Name:  " + testObj.name);
+      console.log("List Length:  " + testObj.tracks.items["length"]);
+      console.log("FIRST Artist's Name:  " + testObj.tracks.items[16].track.artists[0].name);
+      console.log("SECOND Artist's Name:  " + testObj.tracks.items[16].track.artists[1].name);
+      console.log("Track Name:  " + testObj.tracks.items[16].track.name);
+
+      // Example outputs for variables
+      var playlistVar = testObj.name;
+      var listLengthVar = testObj.tracks.items["length"];
+      var firstArtist = testObj.tracks.items[16].track.artists[0].name;
+      var sndArtist = testObj.tracks.items[16].track.artists[1].name;
+      var trackName = testObj.tracks.items[16].track.name;
+      var previewURL;
+
+      // Displays name of Playlist ie: "Australia's Top 50, length 50"
+      $("#head-div").html("<div class= 'jumbotron' >" + playlistVar + "<br>" + listLengthVar + " </div>");
+      
+      
+      var testArry = testObj.tracks.items;
+        console.log(testArry);
+
+      testArry.forEach(element => {
+        console.log(element.track.artists[0].name);
+        // console.log(element.track.artists[1].name);
+        console.log(element.track.name);
+
+        firstArtist = element.track.artists[0].name;
+        trackName = element.track.name;
+        previewURL = element.track.preview_url;
+
+        // Outputs to the DOM
+        var p = $("<p>")
+          .text(firstArtist)
+          .append("<br>" + trackName)
+          .append("<br>" + "<a href=" + previewURL + " target= '_blank'>" + "Preview Song: " + "</a>" );
+          $("#head-div").append(p);
+
+      });
+    });
+</script> -->
+  </body>
+</html>
