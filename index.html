@@ -2,91 +2,156 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/bootstrapstyle.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <title>Project "ONE"</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">World Music Charts</h1>
-                <p class="lead">Enter a city or country to find the current top songs
-                </p>
-            </div>
-        </div>
-        <div id="buttons-div">
+    <!-- <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
 
-        </div>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">World Music Charts</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Enter a city or country to find the current top songs
+                </h5>
+            </div>
+            <!-- <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div> -->
+            <br><br>
 
-        <div class="row">
-            <form>
-                <div class="form-group col-md-6">
-                    <label for="name-input">Name</label>
-                    <input type="name" class="form-control" id="name-input"
-                        placeholder="Enter name">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="search-querry">City/Country Name</label>
-                    <input type="text" class="form-control" id="search-querry" placeholder="Enter city/country">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <div class="card col-md-6" id="youtube-div">
-                <div class="card-body">
-                    Potential Youtube API
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <table class="table col-md-6">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Artist</th>
-                        <th scope="col">Song Name</th>
-                        <th scope="col">Country</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="card col-md-6" id="map-div">
-                <div class="card-body">
-                    This is our map div
-                </div>
-            </div>
         </div>
     </div>
-    <footer>
-        Copyright &copy;
-        <script type="text/javascript">
-            document.write(new Date().getFullYear());
-        </script>, All Rights Reserved.
+
+
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="country-city" type="text" class="search">
+                            <label for="country-city">Add a Country or City</label>
+                        </div>
+
+                        <button class="btn waves-effect waves-light col-s6" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="row">
+                <div class="col s6 m5">
+                    <div class="card-panel teal" id="map-div">
+                        <span class="white-text">Map goes here
+                        </span>
+                    </div>
+                </div>
+                <div class="col s6 m5" id="youtube-div">
+                    <div class="card-panel teal">
+                        <span class="white-text">Pontential Youtube API linked from pulled songs
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <table class="col-s12" id="results-table">
+                    <thead>
+                        <tr>
+                            <th>Artist</th>
+                            <th>Song Name</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+        <br><br>
+    </div>
+
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Project ONE</h5>
+                    <p class="grey-text text-lighten-4">If one should desire to know whether a kingdom is well governed,
+                        if its morals are good or bad, the quality of its music will furnish the answer.
+                        -Confucius</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright &copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>, All Rights Reserved.
+            </div>
+        </div>
     </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="assets/javascript/materialize.js"></script>
+    <script src="assets/javascript/init.js"></script>
+
 </body>
 
 </html>
