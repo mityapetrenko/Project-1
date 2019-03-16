@@ -44,11 +44,11 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="country-city" type="text" class="search">
+                            <input id="country-city" type="text" value="Minneapolis, MN">
                             <label for="country-city">Add a Country or City</label>
                         </div>
 
-                        <button class="btn waves-effect waves-light col-s6" type="submit" name="action">Submit
+                        <button class="btn waves-effect waves-light col-s6" id="add-country" type="button" name="action">Submit
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
@@ -57,27 +57,27 @@
 
             </div>
             <div class="row">
-                <div class="col s6 m5">
-                    <div class="card-panel teal" id="map-div">
-                        <span class="white-text">Google Maps API
+                <div class="col s8 m5">
+                    <div class="card-panel teal" id="map-div" style="border:1px; width:400px; height:400px">
+                        <span class="white-text">
                         </span>
                     </div>
                 </div>
-                <div class="col s6 m5" id="youtube-div">
+                <!-- <div class="col s6 m5" id="youtube-div">
                     <div class="card-panel teal">
                         <span class="white-text">Pontential Youtube API linked from pulled songs
                         </span>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col s6 m5" id="live-bands">
                     <div class="card-panel teal">
                         <span class="white-text">Pontential local live bands API
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="row">
                 <table class="col-s12" id="results-table">
@@ -138,6 +138,9 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/javascript/materialize.js"></script>
     <script src="assets/javascript/init.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO5SI9KDCRq1PxROiKhyHHchLuGHTbj_E&callback=initMap"></script>
+    <script src="assets/javascript/app_CLICK.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
 </body>
 
