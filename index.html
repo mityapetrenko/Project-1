@@ -7,37 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrapstyle.css">
     <title>Project "ONE"</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron jumbotron-fluid text-center">
+        <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Top world music charts</h1>
-                <p class="lead">Enter a city or country to find the current top songs sorted by popularity
+                <h1 class="display-4">World Music Charts</h1>
+                <p class="lead">Enter a city or country to find the current top songs
                 </p>
             </div>
         </div>
         <div id="buttons-div">
 
         </div>
-        <div class="row">
-            <div class col-md-4>
-                <form>
 
-                    <div class="form-group">
-                        <label for="name-input">Name</label>
-                        <input type="name" class="form-control" id="name-input" aria-describedby="emailHelp"
-                            placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="search-querry">City/Country Name</label>
-                        <input type="text" class="form-control" id="search-querry" placeholder="Enter city/country">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+        <div class="row">
+            <form>
+                <div class="form-group col-md-6">
+                    <label for="name-input">Name</label>
+                    <input type="name" class="form-control" id="name-input"
+                        placeholder="Enter name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="search-querry">City/Country Name</label>
+                    <input type="text" class="form-control" id="search-querry" placeholder="Enter city/country">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="card col-md-6" id="youtube-div">
+                <div class="card-body">
+                    Potential Youtube API
+                </div>
             </div>
         </div>
         <div class="row">
@@ -53,32 +56,32 @@
                 <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
                     </tr>
                 </tbody>
             </table>
-            <div class="card col-md-6">
+            <div class="card col-md-6" id="map-div">
                 <div class="card-body">
                     This is our map div
                 </div>
             </div>
         </div>
     </div>
-    <footer class="text-center">
+    <footer>
         Copyright &copy;
         <script type="text/javascript">
             document.write(new Date().getFullYear());
