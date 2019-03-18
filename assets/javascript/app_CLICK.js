@@ -17,7 +17,7 @@ $(document).ready(function () {
 
         var firstName = $("#first_name").val().trim();
         var lastName = $("#last_name").val().trim();
-        var countryName = $("#country-city").val().trim();
+        var countryName = $("#country-name").val().trim();
 
         var userData = {
             firstname: firstName,
@@ -27,9 +27,9 @@ $(document).ready(function () {
 
         database.ref().push(userData);
 
-        console.log("first name " + firstName.firstname);
-        console.log("last name " + lastName.lastname);
-        console.log("country " + countryName.name);
+        // console.log("first name " + firstName.firstname);
+        // console.log("last name " + lastName.lastname);
+        // console.log("country " + countryName.name);
 
     });
 
@@ -41,7 +41,7 @@ $(document).ready(function () {
         // Function that uses AJAX to grab the coordinates of user input and stores it into the coordinates variable
         function ajaxGeoCode() {
 
-            var address = document.getElementById('country-city').value;
+            var address = document.getElementById('country-name').value;
             var apiKey = "AIzaSyAO5SI9KDCRq1PxROiKhyHHchLuGHTbj_E";
             var queryURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + " &key=" + apiKey;
 
@@ -64,8 +64,8 @@ $(document).ready(function () {
         var marker;
         //Function that places marker the on the screen. It suppose to take two inputs. But the geo coder input is not used in order to use AJAX//
         function placeMarker(geocoder, resultsMap) {
-            var address = document.getElementById('country-city').value;
-            console.log(document.getElementById('country-city').value)
+            var address = document.getElementById('country-name').value;
+            console.log(document.getElementById('country-name').value)
             ajaxGeoCode();
             geocoder.geocode({ 'address': address }, function (results, status) {
                 if (marker) {

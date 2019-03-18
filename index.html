@@ -18,7 +18,7 @@
             <br><br>
             <h1 class="header center orange-text">World Music Charts</h1>
             <div class="row center">
-                <h5 class="header col s12 light">Enter a city or country to find the current top songs
+                <h5 class="header col s12 light">Enter a country to find the current top songs
                 </h5>
             </div>
             <br><br>
@@ -44,8 +44,8 @@
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="country-city" type="text" value="Minneapolis, MN">
-                            <label for="country-city">Add a Country or City</label>
+                            <input id="country-name" type="text" value="Minneapolis, MN">
+                            <label for="country-name">Add a Country</label>
                         </div>
 
                         <button class="btn waves-effect waves-light col-s6" id="add-country" type="button" name="action">Submit
@@ -90,21 +90,7 @@
                     </thead>
 
                     <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -140,6 +126,8 @@
     <script src="assets/javascript/init.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO5SI9KDCRq1PxROiKhyHHchLuGHTbj_E&callback=initMap"></script>
     <script src="assets/javascript/app_CLICK.js"></script>
+    <script src="assets/javascript/spotifyAPI.3.js"></script>
+    <script src="assets/javascript/countries.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
 </body>
