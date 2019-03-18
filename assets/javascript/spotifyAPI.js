@@ -1,15 +1,13 @@
 
 
+
+
 //  function, takes in string, if string is similar to COUNTRY NAME IN OBJ, return playist ID of that OBJ/Country
 var countryName;
 
-
-
-
-
- var playlistID = "37i9dQZEVXbJPcfkRz0wJ0"  // This is the selected country's Playlist/Top 50 songs tracks.  // initially "Australia"
- var token = "BQBDsP8_D1MwBNDBgT5_h5fSLcKgCRqRFM8JvQsD3pa9J522eMLMM8AyA0EM3d1Uy2uaZtliAtTo1i7Nkx46FopZfzPIR7rq5GluoKY0JVTxVjkPiUDCNxlHCTvSVegLcEu3XtepAXPCh_201nTu"
- let testObj;
+var playlistID = "37i9dQZEVXbJPcfkRz0wJ0"  // This is the selected country's Playlist/Top 50 songs tracks.  // initially "Australia"
+var token = "BQBDsP8_D1MwBNDBgT5_h5fSLcKgCRqRFM8JvQsD3pa9J522eMLMM8AyA0EM3d1Uy2uaZtliAtTo1i7Nkx46FopZfzPIR7rq5GluoKY0JVTxVjkPiUDCNxlHCTvSVegLcEu3XtepAXPCh_201nTu"
+let testObj;
  
  
  
