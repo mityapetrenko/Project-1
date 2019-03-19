@@ -28,6 +28,7 @@ $(document).ready(function () {
 
     $("#add-country").on("click", function (event) {
         event.preventDefault();
+        $("#results-table").empty();
         console.log("FIRST STOP:");
         countryInput = $("#country-name").val().trim();
         console.log("This is input:  " + countryInput);
@@ -50,7 +51,7 @@ $(document).ready(function () {
 
         const playlistID = countryP_id;  // This is the selected country's Playlist/Top 50 songs tracks.  // initially "Australia"
         // const token = "BQAzvf-WxxK8xO2VQN-hd3znIpS_3-mXhYTG4oTjKWMeZuoxwrZOhivNgFoYhw3LgXgLZJ7g_ZVO857ejl74wylakw57NGDFpZ0u6RSpAgMhcXbdgtEq3zgyxv2HHux86dOxm2uAwxD0wMe52oEH";
-        const token = "BQDNtPReVP1uOJcyfpyUOkq1ja4_VJRv00jviZ-x0c0QvVitUsDnGg17yIEbSDJCcIn6meytjUNtYuPZJbezNyvUh0f5KQ60GgmmEqxwH2jL3xMqou97dwr-FuxQbQBZgEe43dRTwmrg5cQfFDWO";
+        const token = "BQCoPqmD6VBbmg6Bc3wqPlK4o0dmmIMG2Md0g1ebgabbgfv5dNXAQ9h6fd4-E0db60hNeqSkbsCM-ijoh54xLuPBG4q2p0e5-S0nvft5juRc9bstS0ftXWlCnDvLr-n_9uNwDxOz2ofCkbbkGjq4";
         let testObj;
 
 
@@ -116,16 +117,16 @@ $(document).ready(function () {
                     // Find a way to incorporate the imbedded player with the tracks.  Uses the track's ID
                     /* <iframe src="https://open.spotify.com/embed/track/4y3OI86AEP6PQoDE6olYhO" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> */
 
-                    var outputTracks = $("<tr>")
-                        .append("<td>" + firstArtist + "</td>")
-                        .append("<td>" + trackName + "</td>")
-                        .append("<td>" + ctyName + "</td>");
-                    $("#results-table").append(outputTracks);
+                    // var outputTracks = $("<tr>")
+                    //     .append("<td>" + firstArtist + "</td>")
+                    //     .append("<td>" + trackName + "</td>")
+                    //     .append("<td>" + ctyName + "</td>");
+                    // $("#results-table").append(outputTracks);
 
+                    $("#results-table").append("<tr><td>" + firstArtist + "</td><td>" + trackName + "</td><td>" + ctyName + "</td></tr>");
                 });
             });
 
     });
-
 
 })
