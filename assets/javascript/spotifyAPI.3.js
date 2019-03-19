@@ -130,9 +130,6 @@ $(document).ready(function () {
 
     });
 
-<<<<<<< HEAD
-=======
-=======
 
 $(document).ready(function(){
 // Country Object Above
@@ -267,5 +264,5 @@ let testObj;
 
 
 
->>>>>>> 5cab4d852830e04c65ffb6a8a00c4d0c4b42a476
+ 5cab4d852830e04c65ffb6a8a00c4d0c4b42a476
 })
