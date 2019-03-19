@@ -32,7 +32,9 @@ $(document).ready(function () {
         // console.log("country " + countryName.name);
 
     });
-
+    $(document).ready(function(){
+        $('select').formSelect();
+      });
 
         var database = firebase.database();
         // Global variable that will hold coordinates pulled by the geoCoder API//
@@ -87,7 +89,7 @@ $(document).ready(function () {
         function initialize() {
             var centerPosition = new google.maps.LatLng(38.713107, -90.42984);
             var options = {
-                zoom: 6,
+                zoom: 4,
                 center: centerPosition,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
