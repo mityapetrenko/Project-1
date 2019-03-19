@@ -6,6 +6,18 @@ $(document).ready(function(){
 var client_id = '475cfa7b9c8740bdab335681de129825'; // Your client id
 var client_secret = '498f1817fa8448bdbc09ddec03f2522f'; // Your secret
 
+// var authOptions = {
+//   url: "https://accounts.spotify.com/api/token",
+//   headers: {
+//     Authorization: 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64'))
+//   },
+//   form: {
+//     grant_type: 'client_credentials'
+//   },
+//   json: true
+// };
+
+
 //  function, takes in string, if string is similar to COUNTRY NAME IN OBJ, return playist ID of that OBJ/Country
 testFunc = function() {
   console.log("MY JS MADE IT!")
