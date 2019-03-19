@@ -138,18 +138,6 @@ $(document).ready(function(){
 var client_id = '475cfa7b9c8740bdab335681de129825'; // Your client id
 var client_secret = '498f1817fa8448bdbc09ddec03f2522f'; // Your secret
 
-// var authOptions = {
-//   url: "https://accounts.spotify.com/api/token",
-//   headers: {
-//     Authorization: 'Basic ' + (new Buffer(client_id + ':' + client_secret).toString('base64'))
-//   },
-//   form: {
-//     grant_type: 'client_credentials'
-//   },
-//   json: true
-// };
-
-
 //  function, takes in string, if string is similar to COUNTRY NAME IN OBJ, return playist ID of that OBJ/Country
 testFunc = function() {
   console.log("MY JS MADE IT!")
@@ -181,10 +169,9 @@ let countryP_id = countryName.p_id;
 
 
 const playlistID = countryP_id;  // This is the selected country's Playlist/Top 50 songs tracks.  // initially "Australia"
-// const token = "BQAzvf-WxxK8xO2VQN-hd3znIpS_3-mXhYTG4oTjKWMeZuoxwrZOhivNgFoYhw3LgXgLZJ7g_ZVO857ejl74wylakw57NGDFpZ0u6RSpAgMhcXbdgtEq3zgyxv2HHux86dOxm2uAwxD0wMe52oEH";
-const token = "BQD_6wYmLgOEU4KlRWy2oLiJjJ3YYm7x6iwoiVxwRQafW3SJKTvTdeXpqHSq12VbbFw9rrnRv1UjaoT0r1nySQiHmHEGa4QOgQjxjZGo1D0hZ6tWiJqs6nhfgztXUIM7jWLlVXAZ9CHyny_uA9NZ";
+const token = "BQDkWmRK93sUAfYFsh6GvSwAJ90O9lrvLEP5Bpc_cOm1q1BJefkn266h8v446AoGgeMMXwljpCiPdMA3I9WKIagWmCYPwT39OaFrdBH5zWprO_WBNt1AmsVm_oisMCVwEnZ12dpN0sKbooAFBaQK";
 let testObj;
- 
+
  
  
  var queryURL = "https://api.spotify.com/v1/playlists/" + playlistID;
