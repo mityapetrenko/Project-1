@@ -116,15 +116,20 @@ $(document).ready(function () {
           // console.log(element.track.artists[1].name);
           console.log(element.track.name);
 
-          firstArtist = element.track.artists[0].name;
-          trackName = element.track.name;
-          previewURL = element.track.preview_url;
+        firstArtist = element.track.artists[0].name;
+        trackName = element.track.name;
+        previewURL = element.track.preview_url;
+        song_ID = element.track.id;
+        songURL = "https://open.spotify.com/embed/track/";
           // Find a way to incorporate the imbedded player with the tracks.  Uses the track's ID
           /* <iframe src="https://open.spotify.com/embed/track/4y3OI86AEP6PQoDE6olYhO" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> */
-
-          $("#results-table").append("<tr><td>" + firstArtist + "</td><td>" + trackName + "</td><td>" + ctyName + "</td></tr>");
-
-        });
+      
+        var outputTracks = $("<tr>")
+            .append("<td>" + firstArtist + "</td>")
+            .append("<td>" + trackName + "</td>")
+            .append("<td>" + "<iframe src=" + songURL + song_ID + " " + "width='80' height='80' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>"  + "</td>");
+            $("#results-table").append(outputTracks);
+            
       });
 
   });
