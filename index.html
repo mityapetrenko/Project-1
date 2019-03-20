@@ -34,21 +34,88 @@
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
+                            <input id="first_name" type="text" class="validate" required>
                             <label for="first_name">First Name</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
+                            <input id="last_name" type="text" class="validate" required>
                             <label for="last_name">Last Name</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col s12">
+                            <select id="country-name" class=“validate” required>
+                                <option value='United States'>United States</option>
+                                <option value='Argentina'>Argentina</option>
+                                <option value='Australia'>Australia</option>
+                                <option value='Austria'>Austria</option>
+                                <option value='Belgium'>Belgium</option>
+                                <option value='Bolivia'>Bolivia</option>
+                                <option value='Brazil'>Brazil</option>
+                                <option value='Bulgaria'>Bulgaria</option>
+                                <option value='Canada'>Canada</option>
+                                <option value='Chile'>Chile</option>
+                                <option value='Colombia'>Colombia</option>
+                                <option value='Costa Rica'>Costa Rica</option>
+                                <option value='Czech Republic'>Czech Republic</option>
+                                <option value='Denmark'>Denmark</option>
+                                <option value='Dominican Republic'>Dominican Republic</option>
+                                <option value='Ecuador'>Ecuador</option>
+                                <option value='El Salvador'>El Salvador</option>
+                                <option value='Estonia'>Estonia</option>
+                                <option value='Finland'>Finland</option>
+                                <option value='France'>France</option>
+                                <option value='Germany'>Germany</option>
+                                <option value='Greece'>Greece</option>
+                                <option value='Guatemala'>Guatemala</option>
+                                <option value='Honduras'>Honduras</option>
+                                <option value='Hong Kong'>Hong Kong</option>
+                                <option value='Hungary'>Hungary</option>
+                                <option value='Iceland'>Iceland</option>
+                                <option value='India'>India</option>
+                                <option value='Indonesia'>Indonesia</option>
+                                <option value='Ireland'>Ireland</option>
+                                <option value='Israel'>Israel</option>
+                                <option value='Italy'>Italy</option>
+                                <option value='Japan'>Japan</option>
+                                <option value='Latvia'>Latvia</option>
+                                <option value='Lithuania'>Lithuania</option>
+                                <option value='Luxembourg'>Luxembourg</option>
+                                <option value='Malaysia'>Malaysia</option>
+                                <option value='Malta'>Malta</option>
+                                <option value='Mexico'>Mexico</option>
+                                <option value='Netherlands'>Netherlands</option>
+                                <option value='New Zealand'>New Zealand</option>
+                                <option value='Nicaragua'>Nicaragua</option>
+                                <option value='Norway'>Norway</option>
+                                <option value='Panama'>Panama</option>
+                                <option value='Paraguay'>Paraguay</option>
+                                <option value='Peru'>Peru</option>
+                                <option value='Philippines'>Philippines</option>
+                                <option value='Poland'>Poland</option>
+                                <option value='Portugal'>Portugal</option>
+                                <option value='Romania'>Romania</option>
+                                <option value='Singapore'>Singapore</option>
+                                <option value='Slovakia'>Slovakia</option>
+                                <option value='South Africa'>South Africa</option>
+                                <option value='Spain'>Spain</option>
+                                <option value='Sweden'>Sweden</option>
+                                <option value='Switzerland'>Switzerland</option>
+                                <option value='Taiwan'>Taiwan</option>
+                                <option value='Thailand'>Thailand</option>
+                                <option value='Turkey'>Turkey</option>
+                                <option value='United Kingdom'>United Kingdom</option>
+                                <option value='Uruguay'>Uruguay</option>
+                                <option value='Vietnam'>Vietnam</option>
+                            </select>
+                        </div>
+                        <!-- <div class="input-field col s6">
                             <input id="country-name" type="text" value="Minneapolis, MN">
                             <label for="country-name">Add a Country</label>
-                        </div>
+                        </div> -->
 
-                        <button class="btn waves-effect waves-light col-s6" id="add-country" type="button" name="action">Submit
+                        <button class="btn waves-effect waves-light col-s6" id="add-country" type="button"
+                            name="action">Submit
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
@@ -90,7 +157,7 @@
                     </thead>
 
                     <tbody id="results-table">
-                        
+
                     </tbody>
                 </table>
             </div>
@@ -124,7 +191,8 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/javascript/materialize.js"></script>
     <script src="assets/javascript/init.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO5SI9KDCRq1PxROiKhyHHchLuGHTbj_E&callback=initMap"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO5SI9KDCRq1PxROiKhyHHchLuGHTbj_E&callback=initMap"></script>
     <script src="assets/javascript/app_CLICK.js"></script>
     <script src="assets/javascript/countries.js"></script>
     <script src="assets/javascript/spotifyAPI.4.1.js"></script>
